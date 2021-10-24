@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <div class="logo_l"><a href="index.html"><img src="img/logoo.png" alt=""></a> </div>
+            <div class="logo_m">  
+                <a href="#">Blog</a>
+                <a href="#">Phenopeople</a>
+            </div>
+             <div class="logo_r">
+                 <a href="#">JOIN US</a>
+             </div>
+			<div class="logo-icon">	
+				<a href="https://www.facebook.com/sharagho/"><ion-icon name="logo-facebook"></ion-icon></a>
+				<a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+				<a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+			</div>
+			<div class="menu-main">
+				<div id="myDIV">
+					  <button class="btn"><a href="#nd-01"><ion-icon name="home-outline"></ion-icon></a> </button>
+					  <button class="btn active"><a href="#nd-02"><ion-icon name="accessibility-outline"></ion-icon></a></button>
+					  <button class="btn"><a href="#nd-03"><ion-icon name="analytics-outline"></ion-icon></a></button>
+					  <button class="btn"><a href="#nd-04"><ion-icon name="chatbubbles-outline"></ion-icon></a></button>
+					  
+				</div>
+				
+			</div>
+			
+			
+        </div>
+
+
+        <!-- logo -->
+
+		
+			
+			<div class="main-1" id="nd-01"> 
+				<p class="mg-1">noun/phe - no - ma - ly\fe'na - me -li \</p>
+				<h2> A occurence / object / sight that is <span style="color: #FBAF03">both</span><br> a phenomenon and an anomaly.</h2>
+				<p class="mg-2">Dude...check out the puppies on that broad...wow, those are phenomaly good!</p>
+				<h3>#strange #unusual #rack #breast #super #weird #wow</h3>
+				<a href="#"><ion-icon class="mg-3" name="arrow-down-outline"></ion-icon></a>
+			</div>
+<!--		noidung-1-->
+		
+		
+			<div class="main-2" id="nd-02">
+				<div class="content-left">
+					<h1 class="mg-0">We eat apps <br>and webs for <br><span style="color:#FBAF03">breakfast</span>.</h1>
+					<h3 class="mg-4">Dev Design</h3>
+					<p class="mg-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br> Cum recusandae unde officiis enim, aperiam alias nam<br> distinctio, consequatur aspernatur quis cupiditate quas,<br> doloribus dolor illum ratione? Recusandae consequatur<br> veniam molestias eius possimus sed, voluptatibus magnam<br> sunt quo voluptas fugiat maxime in harum nulla veritatis magni<br> optio, perspiciatis laboriosam rerum error.</p>
+				</div>
+				
+				<div class="content-right">
+					<img src="img/1223.png" alt="">
+				</div>	
+			</div>
+		
+		
+			<div class="main-3" id="nd-03">
+				<div class="content-left">
+					<h1 class="mg-0">We make the <br>rules. And<br> they <span style="color:#FBAF03"> sell</span> well.</h1>
+					<h3 class="mg-4">Dev Design</h3>
+					<p class="mg-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br> Cum recusandae unde officiis enim, aperiam alias nam<br> distinctio, consequatur aspernatur quis cupiditate quas,<br> doloribus dolor illum ratione? Recusandae consequatur<br> veniam molestias eius possimus sed, voluptatibus magnam<br> sunt quo voluptas fugiat maxime in harum nulla veritatis magni<br> optio, perspiciatis laboriosam rerum error.</p>
+				</div>
+				
+				<div class="content-right">
+					<img src="img/asd.png" alt="">
+				</div>	
+		
+			</div>
+			<div class="main-4" id="nd-04">
+				<div class="content-mid">
+					<h1> Life is short.<br> Work with <span style="color:#FBAF03">us</span>.</h1>
+					<p style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipisicing<br> elit. Corrupti ullam ab voluptas vel deleniti vero velit<br> culpa eum provident, itaque iste reiciendis, accusantium<br> voluptatem sequi laudantium. Laborum nam assumenda cumque.<br>Nobis dicta, veritatis, magnam reiciendis dolorem<br> laborum odit esse voluptates ad necessitatibus?true mior spor<br>consectetur adipisicing elit. Deleniti, recusandae.</p>
+					<a href="#" >  SEE OPEN POSITIONS</a>
+				</div>
+				
+				 
+			</div>
+   		
+    </div>
+
+	
+	
+<!--script	-->
+	
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script>
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myDIV");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
+</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+</body>
+</html>
